@@ -4,7 +4,6 @@ def guess_number(number_range, tries, capital):
     stop_toggle = 0
     new_capital = 0
     win_number = randint(number_range[0], number_range[1])
-    print(win_number)
     print("Guess number.\n"
           f"Your capital: {capital}\n"
           f"Range: {number_range[0]} - {number_range[1]}\n"
@@ -44,6 +43,7 @@ def guess_number(number_range, tries, capital):
         tries += 1
         continue_or_not = input("Do you want to continue? Y/N\n").lower()
         if continue_or_not == "y" or continue_or_not == "yes":
+            print(" ")
             guess_number(number_range, tries, new_capital)
         else:
             print(f"Tries: {tries}\n"
