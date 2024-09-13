@@ -255,9 +255,7 @@ def start_game():
     spitfire = Spitfire(name="Agni", health=260, damage=8)
     king = King(name="Arthur", health=230, damage=0)
 
-
     heroes_list = [king, warrior_1, doc, spitfire, warrior_2, hacker, magic, witcher, berserk, assistant, samurai]
-
     show_statistics(boss, heroes_list)
     global round_number
     while not is_game_over(boss, heroes_list):
