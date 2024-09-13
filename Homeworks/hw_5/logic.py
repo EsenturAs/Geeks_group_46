@@ -5,7 +5,8 @@ def guess_number(number_range, tries, capital):
     new_capital = 0
     win_number = randint(number_range[0], number_range[1])
     print(win_number)
-    print(f"Your capital: {capital}\n"
+    print("Guess number.\n"
+          f"Your capital: {capital}\n"
           f"Range: {number_range[0]} - {number_range[1]}\n"
           f"Make your choice.")
 
