@@ -10,7 +10,7 @@ try:
         stores = cursor.fetchall()
         for i in range(len(stores)):
             print(f"{i + 1}. {stores[i][0]}")
-except sqlite3.Error as e
+except sqlite3.Error as e:
     print(e)
 print(" ")
 
