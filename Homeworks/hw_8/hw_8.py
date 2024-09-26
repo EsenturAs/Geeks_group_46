@@ -27,17 +27,16 @@ while True:
                     students = cursor.fetchall()
                 except sqlite3.Error as e:
                     print(e)
-            # Вот способ покрасивее:
-            # print(" ")
-            # print(f"Country: {students[0][2]}, city: {students[0][3]}, area of city: {students[0][4]}")
-            # for student in students:
-            #     print(student[0], student[1])
-            # print(" ")
             # Способ из условий задачи:
             print(" ")
             if len(students) == 0:
                 print("    Такого города нет, или нет студентов, живущих в этом городе")
             else:
+                # for student in students:
+                #     print(f"    First name: {student[0]}, last name: {student[1]}, country: {student[2]}, city: {student[3]}, area of city: {student[4]}")
+                # Вот способ покрасивее:
+                print(f"Country: {students[0][2]}, city: {students[0][3]}, area of city: {students[0][4]}")
                 for student in students:
-                    print(f"    First name: {student[0]}, last name: {student[1]}, country: {student[2]}, city: {student[3]}, area of city: {student[4]}")
+                    print(student[0], student[1])
+
             print(" ")
